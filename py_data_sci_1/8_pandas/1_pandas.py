@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 df = pd.read_csv('data/auto-mpg.csv')
 
@@ -21,4 +22,5 @@ print(type(mpg_val))
 #pandas df is 2 diminsional labeled numpy array whose columns are series
 
 
-
+df.plot(y='mpg', kind='hist', bins=35, cumulative=True)
+plt.show()

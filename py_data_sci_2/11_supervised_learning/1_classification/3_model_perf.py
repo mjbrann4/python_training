@@ -37,7 +37,6 @@ print(knn.score(x_test, y_test))
 #larger k = less complex = smoother decision boundry
 #smaller k = more complex model = can overfit
 
-
 #manually compute score
 correct = []
 for i, item in enumerate(y_test):
